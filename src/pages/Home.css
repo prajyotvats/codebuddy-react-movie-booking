@@ -1,0 +1,111 @@
+/* styles.css */
+
+.seat-row {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.seat {
+  border: 2px solid green;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+  box-sizing: border-box;
+}
+
+.seat button {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.seat button.reserved {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+.seat button.selected {
+  background-color: green;
+  border: none;
+  cursor: pointer;
+}
+
+.inverted-pyramid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+}
+
+.inverted-pyramid .seat-row:nth-child(even) {
+  /* margin-left: 10px; */
+}
+
+.seat-container-main {
+  display: flex;
+  justify-content: center;
+}
+
+.screen {
+  background-color: #fff;
+  height: 70px;
+  width: 60%;
+  margin: 15px 0;
+  transform: rotateX(60deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+.screen-direction {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+.row-input-container {
+  /* border: 2px solid red; */
+  display: flex;
+  width: 400px;
+  justify-content: space-evenly;
+  margin-bottom: 16px;
+}
+.row-input-box {
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+}
+
+.label {
+  color: #fff;
+  margin-right: 8px;
+}
+.fetch-btn > button {
+  background: #64748b;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  padding: 2px 8px;
+  color: #fff;
+}
+.fetch-btn > button:hover {
+  opacity: 0.7;
+  border: 2px solid black;
+}
+.row-input-box > input {
+  padding-left: 8px;
+  border-radius: 3px;
+}
+.inner-container {
+  /* height: calc(100% - 100px); */
+}

@@ -1,0 +1,32 @@
+.status-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.status-button {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.status-button button {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border: 2px solid transparent;
+  background-color: white;
+  cursor: not-allowed;
+}
+
+.available button {
+  border-color: green;
+}
+
+.reserved button {
+  background-color: grey;
+}
+
+.selected button {
+  background-color: green;
+}

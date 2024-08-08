@@ -1,0 +1,24 @@
+.total-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.total-submit span {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.total-submit button {
+  padding: 5px 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.total-submit button:hover {
+  background-color: darkblue;
+}
